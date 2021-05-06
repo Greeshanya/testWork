@@ -1,0 +1,52 @@
+//compress: true, sourceMap: false
+
+@import "_vars";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+html, body {
+    font-size: 18px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 21px;
+    color: @black;
+}
+
+.page {
+    width: 960px;
+    height: content;
+}
+
+@media @ipad-mini {
+    .page {
+        width: 768px;
+    }
+}
+
+@media @iphone8 {
+    .page {
+        width: 414px;
+    }
+}
+
+@media @android {
+    .page {
+        width: 360px;
+    }
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+// Blocks
+@import "blocks/header";
+@import "blocks/main";
+@import "blocks/container";
+@import "blocks/footer";

@@ -1,0 +1,146 @@
+// main: ../style.less
+
+.main {
+    width: 960px;
+    height: 319px;
+    margin-top: 23px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__content {
+        width: 766px;
+        height: 319px;
+        margin: 0;
+        background-image: url(../../img/image\ 1.svg);
+        background-size: cover;
+        position: relative;
+
+        &__first {
+            width: 511px;
+            height: 319px;
+            background: @yellow;
+            position: absolute;
+            
+        }
+
+        &__second {
+            width: 255px;
+            height: 319px;
+            margin-left: 511px;
+            background: @blue;
+            position: absolute;
+
+        }
+    }
+
+    &__text {
+        width: 180px;
+        height: 319px;
+        background-color: @grey;
+    }
+
+    &__text p{
+        margin: 131px 45px;
+
+    }
+}
+
+
+
+@media @ipad-mini {
+
+    .main {
+        width: 728px;
+        margin-left: 20px;
+
+        &__content {
+            height: 320px;
+            width: 546px;
+            background: @yellow;
+
+            &__first, &__second {
+                display: none;
+            }
+        }
+
+        &__text {
+            height: 320px;
+        }
+
+        &__text p{
+            margin-top: 42px;
+            margin-left: 36px;
+        }
+
+    }
+
+}
+
+@media @iphone8 {
+
+    .main {
+        width: 414px;
+        height: 597px;
+        flex-direction: column;
+        margin-left: 0px;
+
+        &__content {
+            width: 414px;
+            height: 258px;
+            background-image: url(../../img/image\ 1.svg);
+            position: relative;
+
+            &__first {
+                width: 414px;
+                height: 258px;
+                display: flex;
+                background: @yellow;
+                position: absolute;
+            }
+        }
+        
+        &__text {
+            width: 394px;
+            height: 319px;
+            margin-left: 10px;
+        }
+
+        &__text p{
+            margin-top: 131px 98.5px;
+        }
+    }
+
+}
+
+@media @android {
+    
+    .main {
+        width: 360px;
+        height: 563px;
+        margin-top: 0px;
+
+        &__content {
+            width: 360px;
+            height: 224px;
+
+            &__first {
+                width: 360px;
+                height: 224px;
+            }
+        }
+
+        &__text {
+            width: 330px;
+            height: 319px;
+            margin-left: 15px;
+        }
+
+        &__text p{
+            margin-top: 131px 82.5px;
+        }
+
+    }
+
+
+}
